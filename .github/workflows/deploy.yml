@@ -32,7 +32,7 @@ jobs:
         with:
           cache: pip
       - run: pip install 'pelican[markdown]'
-      - run: pelican -o public
+      - run: pelican -o public .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
