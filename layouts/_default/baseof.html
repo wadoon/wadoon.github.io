@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {{ .Site.Title }}
+    </title>
+
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    {{ $simple := resources.Get "simple.css" | resources.Minify }}
+    <link href="{{ $simple.RelPermalink }}" rel="stylesheet" />
+
+    {{ $style := resources.Get "style.css" | resources.Minify }}
+    <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
+
+    {{ with .Params.style }}
+      {{ $extra := resources.Get . | minify }}
+      <link href="{{ $extra.RelPermalink }}" rel="stylesheet" />
+    {{ end }}
+
+    {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+    {{ end -}}
+  </head>
+
+  <body>
+    <header>
+      <a href="#activities">Activities</a> ·
+      <a href="#projects">Projects</a> ·
+      <a href="#teaching">Teaching</a> ·
+      <a href="#software">Software</a> ·
+      <a href="#publications">Publications</a>
+    </header>
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+
+    </footer>
+  </body>
+</html>

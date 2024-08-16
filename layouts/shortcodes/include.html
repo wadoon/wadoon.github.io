@@ -1,0 +1,12 @@
+{{ $pages :=  (where .Site.RegularPages "Section" (.Get 0)).ByLastmod.Reverse }}
+
+{{ range  $pages }}
+<article>
+  <h3>
+    <a href="{{ if .Param "extlink" }}{{.Param "extlink"}}{{else}}{{ .RelPermalink }}{{end}}">{{ .LinkTitle }}</a>
+  </h3>
+  <p>
+    {{ .Content }}
+  </p>
+</article>
+{{ end }}
