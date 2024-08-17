@@ -1,6 +1,7 @@
 baseURL: https://wadoon.github.io/
 languageCode: en-us
 title: Dr. Alexander Weigl
+assetDir: assets/
 
 canonifyurls: true
 

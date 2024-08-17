@@ -2,60 +2,46 @@
 title: Alexander Weigl
 ---
 
-{{< raw-html >}}
-<style> 
-	.left { float:left; max-width:20%;}
-	.left img {width:100%;}
-	section {
-		border: 1px solid black;
-		padding: 1em;
-		margin-top: 3ex;
-		border-radius: 0px 25px 0px 25px;
-	}
-	
-	section.banner { border-radius: 0px;} 
-	
-	section h2 {
-	  padding:1ex;
-	  text-align:center;
-	}
-	
-    section h3 {
-	  padding:.5ex;
-	  border-top: 1px solid black;
-	}
-	
-	.navbar {
-		text-align:center; 
-		font-size:120%; 
-		margin-top:2ex; 
-		background:#ccc;
-		padding:1ex;
-		border-radius: 0px 10px 0px 10px;
-	}
-</style> 
-{{< /raw-html >}}
+<div class="columns">
+  <div class="column col-3">    
+    <aimg width="200px" src="{{ .Site.BaseURL }}/user-images-250px/{{ .Get "img" }}.webp" />
+  </div>
+  <div class="column col-6">
+    <p>
+      <strong>Dr. rer. nat. Alexander Weigl</strong><br>
+      Executive Manager of HGF Pilot Program Core Informatics<br>Post-Doctoral Researcher
+      <br>
+    </p>
+	<p>
+    <span class="entry">
+		<a href="mailto:weigl@kit.edu"><i class="ph ph-at"></i> weigl@kit.edu</a>
+    </span>    <span class="entry">
+    <a href="https://search.ca.kit.edu/download/pem/19897402986040892472794902419335592683"><i class="ph ph-key"></i> S/MIME Cert</a>
+    </span>    <span class="entry">
+    <a href="https://formal.kastel.kit.edu/~weigl/weigl.asc"><i class="ph ph-fingerprint"></i>
+<abrev title="9C63 C6FC 02D8 6A0E 6326 4B25 8864 9644 84D2 2F29">GPG</abbrev></a>
+</span>    <span class="entry">
+    <a href="https://to.matrix.kit.edu/#/@tk5165:kit.edu">
+		<i class="ph ph-matrix-logo"></i>&nbsp;@tk5165:kit.edu</a>
+    </span>    <span class="entry">
+	<a href="https://orcid.org/0000-0001-8446-4598"><i class="ai ai-orcid" aria-hidden="true"></i>&nbsp;0000-0001-8446-4598
+	</a>
+  </span>    <span class="entry">
+	<a href="https://github.com/wadoon">
+	  <i class="ph ph-github-logo" aria-hidden="true"></i>&nbsp;wadoon</a>
+    </span>    <span class="entry">
+	<a href="https://gitlab.com/wadoon">
+	  <i class="ph ph-gitlab-logo" aria-hidden="true"></i>&nbsp;wadoon</a>
+    </span>    <span class="entry">
+	<a href="https://scholar.google.com/citations?user=hZ-ihecAAAAJ">
+	  <i class="ai ai-google-scholar-square ai-1x">&nbsp;Google Scholar</i></a>
+    </span>
+    <span class="entry">
+	  <a href="https://dblp.uni-trier.de/pid/170/0399.html"><i class="ai ai-dblp-square ai-1x"></i>&nbsp;DBLP</a>
+    </span>
+  </div>
+</div>
 
-
-{{< employee-card
-	img="weigl"
-    name="Dr. rer. nat. Alexander Weigl"
-	position="Executive Manager of HGF Pilot Program Core Informatics<br>Post-Doctoral Researcher"
-	mail="weigl@kit.edu"
-	fingerprint="9C63 C6FC 02D8 6A0E 6326 4B25 8864 9644 84D2 2F29"
-	loc="Building 50.34; Room 15?"	
-	matrix="@tk5165:kit.edu"
-	orcid="0000-0001-8446-4598"
-	github="wadoon"
-	gitlab="wadoon"
-	gscholar="hZ-ihecAAAAJ"
-	dblp="170/0399"
-	phone="+49 721 608 44324"
-	fax="+49 721 608 44021"
-	gpgfile="https://formal.kastel.kit.edu/~weigl/weigl.asc"
-	smime="https://search.ca.kit.edu/download/pem/9746924249633032444828589264"
->}}
- 
 <!--
 <details>
 <summary><h2>Activities</h2></summary>
@@ -105,14 +91,6 @@ title: Alexander Weigl
  
 <section>
 
-## Projects
-
-{{< include "projects" >}}
-
-</section>
-
-<section>
-
 ## Software
 
 {{< include "software" >}} 
@@ -128,7 +106,6 @@ title: Alexander Weigl
   on Memcached
 
 * xorblast -- A CNF preprocessor for xor constraints with support of Gauss-Jordan elimination.
-* [ApproxMC-p(y) -- Approximated Model-Count with Projection.](https://formal.kastel.kit.edu/~weigl/software/approxmc-py)
 
 * **Medical Simuation Markup Language (MSML)** -- The medical simulation
 markup language (MSML) is a flexible XML-based description for the
@@ -142,39 +119,16 @@ coorperation between KIT and DKFZ. msml at Github.
 
 </section>
 
+
 <section>
 
-## Teaching
+## Projects
 
-* Sommer term 2024
-  * Proseminar Formal System Engineering 
-  
-* Winter term 2023/24
-  * Proseminar Formal System Engineering 
-  * Praxis der Software-Entwicklung: Graphical Editor for Contract Automata  
-  
-* Sommer term 2023
-
-* SS 2016: Proseminar Desasters in der Software-Sicherheit
-  Topics are:
-
-    Verifikation von med. Richtlinien
-    Probabilistisches Model-Checking
-
-WS 2015/16: Proseminar Desasters in der Software-Sicherheit
-Topics are:
-
-    Buffer Overflow
-    Storing Passwords
-
-SS 2015:Proseminar Desasters in der Software-Sicherheit
-Topics are:
-
-    Therac-25 Desaster
-    Smartcard Vunerability
+{{< include "projects" >}}
 
 </section>
 
+<!--
 <section>
 
 ## Publications
@@ -243,5 +197,5 @@ Topics are:
 <ul class="biblist">
 <li> <span='authors'><a href="/weigl/">Alexander Weigl</a></span><br><span='title'>Algorithms for Forbidden Pattern Recognition in Transition Diagrams</span><br><span class='venue'>University of Applied Science</span><br><span='actions'></span></li>
 <!-- /publications -->
-
-<section>
+</section>
+-->

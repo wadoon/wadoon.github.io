@@ -1,4 +1,4 @@
-{{ $pages :=  (where .Site.RegularPages "Section" (.Get 0)).ByLastmod.Reverse }}
+{{ $pages :=  (where .Site.RegularPages "Section" (.Get 0)).ByWeight.Reverse }}
 
 {{ range  $pages }}
 <article>

@@ -1,8 +1,9 @@
 ---
 title: SofDCar
+weight: 900
 ---
 
-{{< figure src="https://formal.iti.kit.edu/weigl/SofDCar.png" class="left" >}}
+{{< figure src="SofDCar.png" class="left" >}}
 
 All project partners of the SofDCar Alliance are focussing their research on the challenges of future E/E & SW architecture in vehicles.
 

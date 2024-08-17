@@ -1,5 +1,6 @@
 ---
 title: KeY
+weight: 850
 ---
 
 {{< figure src="https://formal.kastel.kit.edu/~greiner/img/keylogo.gif" class="left" >}}

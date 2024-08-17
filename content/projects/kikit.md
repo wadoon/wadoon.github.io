@@ -1,5 +1,6 @@
 ---
 title: KiKIT
+weight: 10000
 ---
 
 {{< figure src="/images/Helmholtz.svg" class="left" width="100px" height="150px" >}}

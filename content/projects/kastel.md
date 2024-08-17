@@ -1,5 +1,6 @@
 ---
 title: KASTEL
+weight: 250
 ---
 
 {{< figure src="https://formal.kastel.kit.edu/~greiner/img/kastel.png" class="left" >}}

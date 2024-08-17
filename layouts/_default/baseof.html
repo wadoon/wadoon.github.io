@@ -10,8 +10,8 @@
 
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
-    {{ $simple := resources.Get "simple.css" | resources.Minify }}
-    <link href="{{ $simple.RelPermalink }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     {{ $style := resources.Get "style.css" | resources.Minify }}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
@@ -20,10 +20,6 @@
       {{ $extra := resources.Get . | minify }}
       <link href="{{ $extra.RelPermalink }}" rel="stylesheet" />
     {{ end }}
-
-    {{ with .OutputFormats.Get "rss" -}}
-      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
-    {{ end -}}
   </head>
 
   <body>
@@ -40,7 +36,6 @@
     </main>
 
     <footer>
-
     </footer>
   </body>
 </html>

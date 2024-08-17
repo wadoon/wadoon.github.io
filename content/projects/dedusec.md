@@ -1,5 +1,6 @@
 ---
 title: Program-level Specification and Deductive Verification of Security Properties
+weight: 50
 ---
 
 {{< figure src="https://formal.kastel.kit.edu/img/rs3_logo.png" class="left" >}}
