@@ -13,8 +13,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    {{ $style := resources.Get "style.css" | resources.Minify }}
-    <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
+    {{ with resources.Get "style.scss" }}
+      {{ $opts := dict "transpiler" "libsass"
+                       "outputStyle" "expanded"
+                       "targetPath" "style.css" }}
+        {{ with . | toCSS $opts }}
+          {{ if hugo.IsDevelopment }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}">
+          {{ else }}  
+            {{ with . | minify | fingerprint }}
+              <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+            {{ end }}
+          {{ end }}
+       {{ end }}
+    {{ end }}
 
     {{ with .Params.style }}
       {{ $extra := resources.Get . | minify }}
@@ -24,10 +36,12 @@
 
   <body>
     <header>
-      <a href="#activities">Activities</a> ·
-      <a href="#projects">Projects</a> ·
-      <a href="#teaching">Teaching</a> ·
-      <a href="#software">Software</a> ·
+        <!-- <a href="#activities">Activities</a> · -->
+      <a href="#projects">Projects</a>
+      ·
+      <!-- <a href="#teaching">Teaching</a> · -->
+      <a href="#software">Software</a>
+      ·
       <a href="#publications">Publications</a>
     </header>
 

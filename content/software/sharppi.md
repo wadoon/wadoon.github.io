@@ -1,4 +1,9 @@
-### #PI — Quantified Information Flow of C programs
+---
+title: "#PI — Quantified Information Flow of C programs"
+extlink: "https://formal.iti.kit.edu/weigl/software/sharpPI/"
+weight: 2016
+---
+
 sharpPI is a tool for quantified information flow analysis with
 support Shannon Entropy based on the SAT-based approach of Vladimir
 Klebanov.
@@ -10,4 +15,3 @@ QIF with sharpPI has following features:
 * deterministic and non-deterministic programs
 * bounds calculation
 
-[Website](https://formal.iti.kit.edu/weigl/software/sharpPI/) 

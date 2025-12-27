@@ -1,0 +1,26 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<p class="time">
+    <time datetime="{{ .Date.Format "2006-01-02" }}" pubdate>
+        Date: {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+    </time>
+</p>
+
+{{ if .Params.toc }}
+<details>
+    <summary>Table of Contents</summary>
+    {{ .TableOfContents }}
+</details>
+{{ end }}
+
+<content>
+    {{ .Content }}
+</content>
+
+<hr>
+<p>
+    {{ range (.GetTerms "tags") }}
+    <a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>&nbsp;&nbsp;
+    {{ end }}
+</p>
+{{ end }}

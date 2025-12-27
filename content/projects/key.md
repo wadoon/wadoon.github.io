@@ -1,9 +1,11 @@
 ---
 title: KeY
 weight: 850
+extlink: https://key-project.org
 ---
 
-{{< figure src="https://formal.kastel.kit.edu/~greiner/img/keylogo.gif" class="left" >}}
+{{< figure src="/images/KeY_logo.svg" class="left" height="100px" >}}
+
 The KeY System is a formal software development tool that aims to
 integrate design, implementation, formal specification, and formal
 verification of object-oriented software as seamlessly as possible. At

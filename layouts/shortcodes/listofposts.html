@@ -1,0 +1,9 @@
+{{ $pages :=  (where .Site.RegularPages "Section" (.Get 0)).ByDate.Reverse }}
+
+<ul>
+{{ range  $pages }}
+<li>
+    <a href="{{ if .Param "extlink" }}{{.Param "extlink"}}{{else}}{{ .RelPermalink }}{{end}}">{{.Date.Format "2006-01-02"}} {{ .LinkTitle }}</a>
+</li>
+{{ end }}
+</ul>

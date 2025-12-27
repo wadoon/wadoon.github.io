@@ -1,6 +1,7 @@
 ---
 title: "Gradle Test Logging for Github Workflow"
 date: 2025-12-26
+tags: [gradle, testing]
 ---
 
 You can use the `TestListener` interface of Gradle Test tasks to get a proper
@@ -8,6 +9,8 @@ clutter-free printing of tests.
 
 The following listener is only activated on if `CI=true` is set on the
 environment. Moreover, you can also couple it with the environment variable
+    {{ end }}
+  {{ end }}
 `RUNNER_DEBUG` to activate this logging only on debugging runs.
 
 ```kotlin

@@ -1,6 +1,7 @@
 ---
 title: IMPROVE APS
 weight: 90
+extlink: https://formal.kastel.kit.edu/projects/improve-aps
 ---
 
 {{< figure src="https://formal.kastel.kit.edu/projects/improve-aps/Logo.png" class="left" >}}

@@ -1,0 +1,18 @@
+
+{{ $url := "https://publikationen.bibliothek.kit.edu/publikationslisten/get.php" }}
+{{ $opts := dict
+"method" "POST"
+"body"   "referencing=all&external_publications=all&lang=en&format=html&style=kit-authors-year-title_i-other&consider_suborganizations=true&contributors=%5B%5B%5B%5D%2C%5B%22p3111.105%22%5D%5D%5D&group_by=desc+year&list=none%2Cunordered&title=%3Ch3%3E%3C\u0021--title--%3E%3C%2Fh3%3E&full_text_links=true&sharing_icons=true&links=%1FSchiffl%2C+J.%1Fhttps%3A%2F%2Fformal.iti.kit.edu%2F~schiffl%1FWeigl%2C+A.%1Fhttps%3A%2F%2Fformal.iti.kit.edu%2F~weigl%1FBeckert%2C+B.%1Fhttps%3A%2F%2Fformal.iti.kit.edu%2Fbeckert"
+"headers" (dict "Content-Type" "application/x-www-form-urlencoded; charset=UTF-8")
+}}
+
+{{ with try (resources.GetRemote $url $opts) }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else with .Value }}
+    {{.Content | safe.HTML }}
+  {{ else }}
+    {{ errorf "Unable to get remote resource %q" $url }}
+  {{ end }}
+{{ end }}
+

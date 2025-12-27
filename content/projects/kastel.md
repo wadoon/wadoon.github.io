@@ -1,9 +1,11 @@
 ---
 title: KASTEL
 weight: 250
+extlink: https://kastel-labs.de/
 ---
 
 {{< figure src="https://formal.kastel.kit.edu/~greiner/img/kastel.png" class="left" >}}
+
 The main topics intelligent infrastructure, cloud
 computing and public security challenge the IT security of the
 future. In addition to the classical term of security one has to deal

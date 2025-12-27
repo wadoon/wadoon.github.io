@@ -1,5 +1,6 @@
 {{ $pages :=  (where .Site.RegularPages "Section" (.Get 0)).ByWeight.Reverse }}
 
+<div class="articles articles-{{(.Get 0)}}">
 {{ range  $pages }}
 <article>
   <h3>
@@ -10,3 +11,4 @@
   </p>
 </article>
 {{ end }}
+</div>
