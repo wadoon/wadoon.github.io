@@ -2,14 +2,26 @@
 title: Intern
 ---
 
-Build status
+<style>
+img {width: auto; vertical-align:middle;}
+</style>
 
-* kikit-bibliography
-[![Deploy](https://github.com/wadoon/kikit-bibliography/actions/workflows/deploy.yml/badge.svg)](https://github.com/wadoon/kikit-bibliography/actions/workflows/deploy.yml)
+# Build stati
+
+* [kikit-bibliography](https://github.com/wadoon/kikit-bibliography)
+  [![Deploy](https://github.com/wadoon/kikit-bibliography/actions/workflows/deploy.yml/badge.svg)](https://github.com/wadoon/kikit-bibliography/actions/workflows/deploy.yml)
 
 * flavium:  https://github.com/wadoon/flavium/actions/new
 
 ## KeY 
+
+* [key-citool](https://github.com/keyproject/key)
+
+  [![Tests](https://github.com/KeYProject/key/actions/workflows/tests.yml/badge.svg)](https://github.com/KeYProject/key/actions/workflows/tests.yml) 
+
+  [![Broad Release Tests](https://github.com/KeYProject/key/actions/workflows/tests_winmac.yml/badge.svg)](https://github.com/KeYProject/key/actions/workflows/tests_winmac.yml)
+
+  [![Nightly Deployer of Weekly   Builds](https://github.com/KeYProject/key/actions/workflows/nightlydeploy.yml/badge.svg)](https://github.com/KeYProject/key/actions/workflows/nightlydeploy.yml)
 
 * [key-citool](https://github.com/wadoon/key-citool)
   [![Java CI](https://github.com/wadoon/key-citool/actions/workflows/build.yaml/badge.svg)](https://github.com/wadoon/key-citool/actions/workflows/build.yaml)
