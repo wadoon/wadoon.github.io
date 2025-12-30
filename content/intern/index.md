@@ -4,7 +4,7 @@ title: Intern
 
 <style>
     img {width: auto !important ; vertical-align:middle !important;}
-    section {
+    ul {
         display: grid;
         grid-template-columns: repeat(3, 32%);
         gap: 1em;
@@ -17,7 +17,7 @@ title: Intern
 
 # Build stati
 
-<section>
+<section> 
 
 * [kikit-bibliography](https://github.com/wadoon/kikit-bibliography)
   [![Deploy](https://github.com/wadoon/kikit-bibliography/actions/workflows/deploy.yml/badge.svg)](https://github.com/wadoon/kikit-bibliography/actions/workflows/deploy.yml)
