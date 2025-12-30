@@ -3,25 +3,40 @@ title: Intern
 ---
 
 <style>
-img {width: auto; vertical-align:middle;}
+    img {width: auto !important ; vertical-align:middle !important;}
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        gap: 1em;
+    }
+    
+    li {
+        list-style:none;
+    }
 </style>
 
 # Build stati
 
+<section>
+
 * [kikit-bibliography](https://github.com/wadoon/kikit-bibliography)
   [![Deploy](https://github.com/wadoon/kikit-bibliography/actions/workflows/deploy.yml/badge.svg)](https://github.com/wadoon/kikit-bibliography/actions/workflows/deploy.yml)
 
+<!--
 * flavium:  https://github.com/wadoon/flavium/actions/new
+-->
+
+</section>
 
 ## KeY 
 
-* [key-citool](https://github.com/keyproject/key)
+<section>
 
+* [key](https://github.com/keyproject/key)
   [![Tests](https://github.com/KeYProject/key/actions/workflows/tests.yml/badge.svg)](https://github.com/KeYProject/key/actions/workflows/tests.yml) 
-
-  [![Broad Release Tests](https://github.com/KeYProject/key/actions/workflows/tests_winmac.yml/badge.svg)](https://github.com/KeYProject/key/actions/workflows/tests_winmac.yml)
-
+  [![Broad Release Tests](https://github.com/KeYProject/key/actions/workflows/tests_winmac.yml/badge.svg)](https://github.com/KeYProject/key/actions/workflows/tests_winmac.yml) 
   [![Nightly Deployer of Weekly   Builds](https://github.com/KeYProject/key/actions/workflows/nightlydeploy.yml/badge.svg)](https://github.com/KeYProject/key/actions/workflows/nightlydeploy.yml)
+
 
 * [key-citool](https://github.com/wadoon/key-citool)
   [![Java CI](https://github.com/wadoon/key-citool/actions/workflows/build.yaml/badge.svg)](https://github.com/wadoon/key-citool/actions/workflows/build.yaml)
@@ -32,6 +47,9 @@ img {width: auto; vertical-align:middle;}
 * key-tacletdoc 
   [![Java CI](https://github.com/wadoon/key-tacletdoc/actions/workflows/build.yaml/badge.svg)](https://github.com/wadoon/key-tacletdoc/actions/workflows/build.yaml)
   [![Deploy static content to Pages](https://github.com/wadoon/key-tacletdoc/actions/workflows/static.yml/badge.svg)](https://github.com/wadoon/key-tacletdoc/actions/workflows/static.yml)
+
+* `smt2key` [![Main workflow](https://github.com/wadoon/smt2key/actions/workflows/main.yml/badge.svg)](https://github.com/wadoon/smt2key/actions/workflows/main.yml)
+
 
 * [pygments-jml-key](https://github.com/wadoon/pygments-jml-key)
 
@@ -54,24 +72,34 @@ img {width: auto; vertical-align:middle;}
 * vscode-jml 
   [![Build](https://github.com/jmltoolkit/vscode-jml/actions/workflows/build.yml/badge.svg)](https://github.com/jmltoolkit/vscode-jml/actions/workflows/build.yml)
 
+</section>
+
 ## verifaps
+
+<section>
 
 * https://github.com/VerifAPS/verifaps-lib/
   [![Tests](https://github.com/VerifAPS/verifaps-lib/actions/workflows/gradle.yml/badge.svg)](https://github.com/VerifAPS/verifaps-lib/actions/workflows/gradle.yml)
 
 
-* `setup-nuxmv`
+* [`setup-nuxmv`](https://github.com/VerifAPS/setup-nuxmv)
+
   [![Lint Codebase](https://github.com/VerifAPS/setup-nuxmv/actions/workflows/linter.yml/badge.svg)](https://github.com/VerifAPS/setup-nuxmv/actions/workflows/linter.yml)
+  
   [![Continuous Integration](https://github.com/VerifAPS/setup-nuxmv/actions/workflows/ci.yml/badge.svg)](https://github.com/VerifAPS/setup-nuxmv/actions/workflows/ci.yml)
+  
   [![Check Transpiled JavaScript](https://github.com/VerifAPS/setup-nuxmv/actions/workflows/check-dist.yml/badge.svg)](https://github.com/VerifAPS/setup-nuxmv/actions/workflows/check-dist.yml)
 
-
-* `smt2key` [![Main workflow](https://github.com/wadoon/smt2key/actions/workflows/main.yml/badge.svg)](https://github.com/wadoon/smt2key/actions/workflows/main.yml)
+</section>
 
 ## Contract Automata
 
+<section>
+
 * [Gecko](https://github.com/wadoon/Gecko/)
 
+* [cagen](https://github.com/wadoon/cagen)
 
-* cagen 
-[![Tests](https://github.com/wadoon/cagen/actions/workflows/test.yml/badge.svg)](https://github.com/wadoon/cagen/actions/workflows/test.yml)
+  [![Tests](https://github.com/wadoon/cagen/actions/workflows/test.yml/badge.svg)](https://github.com/wadoon/cagen/actions/workflows/test.yml)
+
+</section>
