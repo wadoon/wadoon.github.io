@@ -61,12 +61,19 @@ title: Intern
   [![Continuous Integration](https://github.com/KeYProject/setup-smt/actions/workflows/ci.yml/badge.svg)](https://github.com/KeYProject/setup-smt/actions/workflows/ci.yml)
   [![Lint Codebase](https://github.com/KeYProject/setup-smt/actions/workflows/linter.yml/badge.svg)](https://github.com/KeYProject/setup-smt/actions/workflows/linter.yml)
 
+</section>
+
 ## JML 
-* jmlparser: 
+
+<section>
+
+* [jmlparser](https://github.com/jmltoolkit/jmlparser) 
+
   [![Check codegen and formatting](https://github.com/jmltoolkit/jmlparser/actions/workflows/formatting_check.yml/badge.svg)](https://github.com/jmltoolkit/jmlparser/actions/workflows/formatting_check.yml)
   [![Tests](https://github.com/jmltoolkit/jmlparser/actions/workflows/maven_tests.yml/badge.svg)](https://github.com/jmltoolkit/jmlparser/actions/workflows/maven_tests.yml)
 
 * [jml-tools](https://github.com/jmltoolkit/jml-tools)
+
   [![Java CI with Gradle](https://github.com/jmltoolkit/jml-tools/actions/workflows/gradle.yml/badge.svg)](https://github.com/jmltoolkit/jml-tools/actions/workflows/gradle.yml)
 
 * vscode-jml 
