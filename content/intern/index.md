@@ -4,7 +4,8 @@ title: Intern
 
 <style>
     img {width: auto !important ; vertical-align:middle !important;}
-    ul {
+    ul
+    {
         display: grid;
         grid-template-columns: repeat(3, 32%);
         gap: 1em;
